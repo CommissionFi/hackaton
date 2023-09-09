@@ -9,10 +9,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="Logo">
-          CommissionFi
-        </div>
+      <header className="AppHeader">
+        <div className="Logo">CommissionFi</div>
         <div className="dashboardButton">
           <button onClick={redirectToDashboard} className="dashboard-button">
             Go to Dashboard
