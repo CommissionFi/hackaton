@@ -22,13 +22,17 @@ body {
   color: #61dafb;
 }
 .AppFooter {
+  border-top: 2px solid #3f4249;
+  background: #2d3036;
   display:flex;
   justify-content: center;
   margin-bottom: 15px;
 }
 .AppFooter img {
+  margin-top: 15px;
+  margin-left: 45px;
   height: auto;
-  width: 120px;
+  width: 45px;
 }
 @keyframes App-logo-spin {
   from {
