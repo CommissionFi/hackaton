@@ -8,31 +8,29 @@ interface FooterLinkProps {
 
 function FooterLink({ url, iconSrc }: FooterLinkProps) {
   return (
-    <li>
+    <div className="footerIcon">
       <a href={url} target="_blank" rel="noopener noreferrer">
         <img src={process.env.PUBLIC_URL + iconSrc} alt="Icon" /> 
       </a>
-    </li>
+    </div>
   );
 }
 
 function AppFooter() {
   return (
     <footer className="AppFooter">
-      <ul>
-        <FooterLink
-          url="https://lensvert.xyz/u/commissionfi"
-          iconSrc="/icons/lens.png" 
-        />
-        <FooterLink
-          url="https://x.com/commissionfi"
-          iconSrc="/icons/x.png" 
-        />
-        <FooterLink
-          url="https://github.com/CommissionFi/hackaton"
-          iconSrc="/icons/github.png" 
-        />
-      </ul>
+      <FooterLink
+        url="https://lensvert.xyz/u/commissionfi"
+        iconSrc="/icons/lens.png" 
+      />
+      <FooterLink
+        url="https://x.com/commissionfi"
+        iconSrc="/icons/x.png" 
+      />
+      <FooterLink
+        url="https://github.com/CommissionFi/hackaton"
+        iconSrc="/icons/github.png" 
+      />
     </footer>
   );
 }
