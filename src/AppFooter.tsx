@@ -1,5 +1,5 @@
 import React from 'react';
-import './app.css';
+import './App.css';
 
 interface FooterLinkProps {
   url: string;
@@ -18,7 +18,7 @@ function FooterLink({ url, iconSrc }: FooterLinkProps) {
 
 function AppFooter() {
   return (
-    <footer className="appFooter">
+    <footer className="AppFooter">
       <ul>
         <FooterLink
           url="https://lensvert.xyz/u/commissionfi"
