@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import User from './User';
 import AppFooter from './AppFooter';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,9 +11,14 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App/>
-    <AppFooter/>
-  </React.StrictMode>
+    <Router>
+      <Switch>
+        <Route path="/u/:input" component={User} />
+        <Route path="/" exact component={App} />
+      </Switch>
+    </Router>
+    <AppFooter />
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
