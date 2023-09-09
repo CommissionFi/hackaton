@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <header className="AppHeader">
         <div className="Logo">CommissionFi</div>
-        <div className="dashboardButton">
-          <button onClick={redirectToDashboard} className="dashboard-button">
+        <div>
+          <button onClick={redirectToDashboard} className="dashboardButton">
             Go to Dashboard
           </button>
         </div>
